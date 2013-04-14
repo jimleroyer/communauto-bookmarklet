@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Communauto Bookmarklet</title>
+</head>
+<body>
+
+<div id="bookmarklet-load">
+
+
+  <p>To load the bookmarklet, drag and drop this
+    <script type="text/javascript">// <![CDATA[
+    var linkster = "javascript:(function(){var head=document.getElementsByTagName('head')[0],script=document.createElement('script');script.type='text/javascript';script.src='http://localhost:8080/show-car-id.js?' + Math.floor(Math.random()*99999);head.appendChild(script);})(); void 0";
+    linkster = '<a href="' + linkster + '">Communauto Bookmarklet</a>';
+    document.write(linkster);
+    // ]]&gt;</script>
+     to your bookmark bar.
+  </p>
+  <table>
+    <caption>Test table</caption>
+    <thead>
+    <tr>
+      <td />
+      <th scope="col">Col 1</th>
+      <th scope="col">Col 2</th>
+      <th scope="col">Col 3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th scope="row">Row 1</th>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th scope="row">Row 2</th>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th scope="row">Row 3</th>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+    "name": "communauto-test",
+    "preferGlobal": false,
+    "version": "0.1.0",
+    "author": "jimleroyer",
+    "description": "Testing for the Communauto bookmarklet.",
+    "devDependencies": {
+        "connect": "2.7.5"
+    },
+    "license": "MIT",
+    "engines": {
+        "node": ">=0.10"
+    }
+}
+
