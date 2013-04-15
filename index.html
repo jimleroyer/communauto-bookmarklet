@@ -1,0 +1,15 @@
+<html>
+<head><title>Installation for the Communauto bookmarklet</title></head>
+<body>
+<div id="linkster">
+  <p>To load the bookmarklet, drag and drop this
+    <script type="text/javascript">// <![CDATA[
+    var linkster = "javascript:(function(){var head=document.getElementsByTagName('head')[0],script=document.createElement('script');script.type='text/javascript';script.src='https://raw.github.com/jimleroyer/communauto-bookmarklet/master/src/show-car-id.js?' + Math.floor(Math.random()*99999);head.appendChild(script);})(); void 0";
+    linkster = '<a href="' + linkster + '">Communauto Bookmarklet</a>';
+    document.write(linkster);
+    // ]]&gt;</script>
+     to your bookmark bar.
+  </p>
+</div>
+</body>
+</html>
