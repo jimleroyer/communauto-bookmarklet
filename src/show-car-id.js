@@ -20,7 +20,8 @@ window.bookmarklet({
 
                        css: [],
                        js: [],
-//	                   jqpath : 'myCustomjQueryPath.js', <-- option to include your own path to jquery
+                       // option to include your own path to jquery
+                       jqpath: 'https://raw.github.com/jimleroyer/communauto-bookmarklet/master/src/jquery-1.9.1.min.js',
                        ready: function () {
                            var $anchors = $("a:contains('Choisir')");
                            console.log($anchors.length + " possible reservation(s) found.");
