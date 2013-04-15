@@ -19,8 +19,9 @@ before.
 How to use
 ----------
 
-Go to this link and follow the instructions. It's dead simple. You just need to drag and drop
-a link to your bookmark browser bar. This will create the bookmarklet.
+Go to [this link](http://jimleroyer.github.io/communauto-bookmarklet/) and follow the 
+instructions. It's dead simple. You just need to drag and drop a link to your bookmark 
+browser bar. This will create the bookmarklet.
 
 Supported
 ---------
