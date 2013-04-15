@@ -41,7 +41,7 @@ window.bookmarklet({
                                if (match) {
                                    var carid = match[1];
                                    console.log("Car id is " + carid + ", creating new label.");
-                                   element.innerHTML = "&nbsp; Choisir " + carid + "&nbsp;";
+                                   element.innerHTML = "&nbsp;" + select_word + " " + carid + "&nbsp;";
                                }
                                else {
                                    console.log("Something went wrong while processing the car link! -> " + js);
