@@ -33,7 +33,7 @@ window.bookmarklet({
                                    element.innerHTML = " &nbsp; Choisir " + carid + " &nbsp; ";
                                }
                                else {
-                                   console.log("No match found! Something is wrong!");
+                                   console.log("Something went wrong while processing the car link! -> " + js);
                                }
                            });
                        }
