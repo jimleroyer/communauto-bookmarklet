@@ -22,8 +22,8 @@ How to install
 Go to [this link](http://jimleroyer.github.io/communauto-bookmarklet/) and follow the 
 instructions. It's dead simple. You just need to drag and drop a link to your bookmark 
 browser bar. This will create the bookmarklet. The link to create it cannot be placed
-here as GitHub has restrictions on Javascript (i.e. this website is primarily used for
-source control and *not* as a web hosting solution).
+here as GitHub has severe restrictions on Javascript (i.e. this website is primarily used 
+for source control and *not* as a web hosting solution).
 
 How to use
 ----------
