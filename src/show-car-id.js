@@ -13,8 +13,6 @@
  * as defined here: http://creativecommons.org/licenses/by/3.0/
  */
 
-var re_car_id = /CarID=([\d])+&/g;
-
 window.bookmarklet = function (opts) {fullFunc(opts)};
 
 // These are the styles, scripts and callbacks we include in our bookmarklet:
@@ -22,22 +20,22 @@ window.bookmarklet({
 
                        css: [],
                        js: [],
-//	jqpath : 'myCustomjQueryPath.js', <-- option to include your own path to jquery
+//	                   jqpath : 'myCustomjQueryPath.js', <-- option to include your own path to jquery
                        ready: function () {
-
-                           // The meat of your jQuery code goes here
-                           // $("body").html("Hello World");
                            var $anchors = $("a:contains('Choisir')");
-                           console.log("Anchor found:" + $anchors);
-                           if ($anchors.length) {
-                               var js = $anchors.attr("href");
-                               console.log("js found:" + $anchors);
-                               var match = re_car_id.exec(js);
-                               if (match[0]) {
-                                   console.log("car id is:" + match[0]);
-                                   var carid = match[0];
+                           console.log($anchors.length + " possible reservation(s) found.");
+                           $anchors.each(function (index, element) {
+                               var js = element.href;
+                               var match = /CarID=([\d]+)&/g.exec(js);
+                               if (match) {
+                                   console.log("Car id is: " + match[1] + ", creating new label.");
+                                   var carid = match[1];
+                                   element.innerHTML = " &nbsp; Choisir " + carid + " &nbsp; ";
                                }
-                           }
+                               else {
+                                   console.log("No match found! Something is wrong!");
+                               }
+                           });
                        }
                    })
 
