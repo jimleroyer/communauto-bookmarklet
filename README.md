@@ -1,8 +1,9 @@
 Communauto Bookmarklet
 ======================
 
-This was a mini-project to introduce myself to bookmarklets, jquery and node. It has this
-practical use to show the car numbers on the Communauto listing. 
+The Communauto Bookmarklet targets the Communauto website, a car pool sharing service
+location in Quebec, Canada. This was a mini-project to introduce myself to bookmarklets, 
+jquery and node.js (for testing).
 
 One Goal
 --------
