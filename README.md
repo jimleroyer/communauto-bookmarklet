@@ -8,20 +8,31 @@ One Goal
 --------
 
 The Communauto bookmarklet only does one thing: show the car numbers in the 
-availability report or reservervation grid. These were recently removed and while it is
-still possible to know the numbers for the cars that were unreserved (by hovering the mouse
-over the link and analyzing the URI), this bookmarklet simplifies the task. It changes
-the 'Select' labels of all the available cars to include its corresponding number.
+'Availability Report' or 'Reservervation Grid' pages. These were recently removed and 
+while it is still possible to know the numbers for the cars that were unreserved (by 
+hovering the mouse over the link and analyzing the URI), this bookmarklet simplifies 
+the task. It changes the 'Select' labels of all the available cars to include its 
+corresponding number.
 
 Hence there is no more guessing the car numbers. We can pick our favorite car just as
 before.
 
-How to use
-----------
+How to install
+--------------
 
 Go to [this link](http://jimleroyer.github.io/communauto-bookmarklet/) and follow the 
 instructions. It's dead simple. You just need to drag and drop a link to your bookmark 
 browser bar. This will create the bookmarklet.
+
+How to use
+----------
+
+Once you have the bookmarklet loaded in your bookmark bar, login to the Communauto page,
+do your operations as usual. But once you get in either the 'Availability Report' or
+'Reservation Grid' pages, hit the 'Communauto Bookmarklet' button (or menu). This will
+execute Javascript code that will display the car numbers in the labels of the 'Select'
+labels. This only applies for cars that were not reserved yet, as the car number is not
+available on the client-side (i.e. in the browser) for already reserved cars.
 
 Supported
 ---------
