@@ -1,16 +1,57 @@
 <html>
 <head><title>Installation for the Communauto bookmarklet</title></head>
 <body>
-<div id="linkster">
-  <h3>Communauto Bookmarklet Installation</h3>
-  <p>To install the bookmarklet, drag and drop this
+<div id="main">
+    <h2>Communauto Bookmarklet</h2>
+    <p>This was a mini-project to introduce myself to bookmarklets, jquery and 
+        node. It has this practical use to show the car numbers on the 
+        Communauto listing.</p>
+
+    <h3>One Goal</h3>
+    <p>The Communauto bookmarklet only does one thing: show the car numbers in 
+        the 'Availability Report' or 'Reservervation Grid' pages. These were 
+        recently removed and while it is still possible to know the numbers for
+        the cars that were unreserved (by hovering the mouse over the link and 
+        analyzing the URI), this bookmarklet simplifies the task. It adds the 
+        car number next to the 'Select' links for every availability.</p>
+
+    <p>Hence there is no more guessing the car numbers. We can pick our favorite 
+        car just as before.</p>
+
+    <h3>How to install</h3>
+    <h3>Communauto Bookmarklet Installation</h3>
+    <p>To install the bookmarklet, drag and drop this
     <script type="text/javascript">// <![CDATA[
     var linkster = "javascript:(function(){var head=document.getElementsByTagName('head')[0],script=document.createElement('script');script.type='text/javascript';script.src='https://raw.github.com/jimleroyer/communauto-bookmarklet/master/src/show-car-id.js?' + Math.floor(Math.random()*99999);head.appendChild(script);})(); void 0";
     linkster = '<a href="' + linkster + '">Communauto Bookmarklet</a>';
     document.write(linkster);
     // ]]&gt;</script>
      to your bookmark bar.
-  </p>
+    </p>
+
+    <h3>How to use</h3>
+    <p>Once you have the bookmarklet loaded in your bookmark bar, login to the 
+        Communauto page, do your operations as usual. But once you get in 
+        either the 'Availability Report' or 'Reservation Grid' pages, hit the 
+        'Communauto Bookmarklet' button (or menu). This will execute Javascript 
+        code that will display the car numbers next to the 'Select' links. This 
+        only applies for cars that were not reserved yet, as the car number is 
+        not available on the client-side (i.e. in the browser) for already 
+        reserved cars.</p>
+
+    <h3>Supported</h3>
+    <p>Only Chrome has been tested with so far. Bookmarlets should work across 
+        all modern browsers though. If you have a bug or want to request 
+        support for your favorite browser, open an issue on the 
+        <a href="https://github.com/jimleroyer/communauto-bookmarklet">project 
+            page</a>.</p>
+
+    <h3>Suggestions</h3>
+    <p>There are many improvement the Communauto website could use. If you 
+        think so too, and have an idea, open an issue on the 
+        <a href="https://github.com/jimleroyer/communauto-bookmarklet">project 
+            page</a>.</p>
+  
 </div>
 </body>
 </html>
