@@ -13,6 +13,14 @@
  * as defined here: http://creativecommons.org/licenses/by/3.0/
  */
 
+var LANGUAGES = {};
+LANGUAGES[1] = "French";
+LANGUAGES[2] = "English";
+
+var LANG_SELECT = {};
+LANG_SELECT[1] = "Choisir";
+LANG_SELECT[2] = "Select";
+
 window.bookmarklet = function (opts) {fullFunc(opts)};
 
 // These are the styles, scripts and callbacks we include in our bookmarklet:
@@ -23,7 +31,9 @@ window.bookmarklet({
                        // option to include your own path to jquery
                        jqpath: 'https://raw.github.com/jimleroyer/communauto-bookmarklet/master/src/jquery-1.9.1.min.js',
                        ready: function () {
-                           var $anchors = $("a:contains('Choisir')");
+                           console.log("Detected " + detectLanguage() + " language.");
+                           var select_word = translateInto(LANG_SELECT);
+                           var $anchors = $("a:contains('" + select_word + "')");
                            console.log($anchors.length + " possible reservation(s) found.");
                            $anchors.each(function (index, element) {
                                var js = element.href;
@@ -38,7 +48,19 @@ window.bookmarklet({
                                }
                            });
                        }
-                   })
+                   });
+
+function detectLanguage() {
+    return LANGUAGES[languageId()];
+}
+
+function languageId() {
+    return frmDisponibility.CurrentLanguageID.value;
+}
+
+function translateInto(lang_dic) {
+    return lang_dic[languageId()];
+}
 
 function fullFunc(a) {
     function d(b) {
