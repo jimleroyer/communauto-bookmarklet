@@ -11,8 +11,7 @@ The Communauto bookmarklet only does one thing: show the car numbers in the
 'Availability Report' or 'Reservervation Grid' pages. These were recently removed and 
 while it is still possible to know the numbers for the cars that were unreserved (by 
 hovering the mouse over the link and analyzing the URI), this bookmarklet simplifies 
-the task. It changes the 'Select' labels of all the available cars to include its 
-corresponding number.
+the task. It adds the car number next to the 'Select' links for every availability.
 
 Hence there is no more guessing the car numbers. We can pick our favorite car just as
 before.
