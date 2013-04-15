@@ -29,8 +29,8 @@ window.bookmarklet({
                                var match = /CarID=([\d]+)&/g.exec(js);
                                if (match) {
                                    var carid = match[1];
-                                   console.log("Car id is: " + carid + ", creating new label.");
-                                   element.innerHTML = " &nbsp; Choisir " + carid + " &nbsp; ";
+                                   console.log("Car id is " + carid + ", creating new label.");
+                                   element.innerHTML = "&nbsp; Choisir " + carid + "&nbsp;";
                                }
                                else {
                                    console.log("Something went wrong while processing the car link! -> " + js);
