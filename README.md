@@ -30,9 +30,9 @@ How to use
 Once you have the bookmarklet loaded in your bookmark bar, login to the Communauto page,
 do your operations as usual. But once you get in either the 'Availability Report' or
 'Reservation Grid' pages, hit the 'Communauto Bookmarklet' button (or menu). This will
-execute Javascript code that will display the car numbers in the labels of the 'Select'
-labels. This only applies for cars that were not reserved yet, as the car number is not
-available on the client-side (i.e. in the browser) for already reserved cars.
+execute Javascript code that will display the car numbers next to the 'Select' links.
+This only applies for cars that were not reserved yet, as the car number is not available
+on the client-side (i.e. in the browser) for already reserved cars.
 
 Supported
 ---------
