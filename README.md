@@ -43,5 +43,5 @@ though. If you have a bug or want to request support for your favorite browser, 
 Suggestions
 -----------
 
-I think there many improvement the Communauto website could use. If you have think so, and have
-an idea, open an issue and we could have it done. 
+There are many improvement the Communauto website could use. If you think so too, and have
+an idea, open an issue.
