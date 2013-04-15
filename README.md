@@ -2,7 +2,7 @@ Communauto Bookmarklet
 ======================
 
 The Communauto Bookmarklet targets the Communauto website, a car pool sharing service
-location in Quebec, Canada. This was a mini-project to introduce myself to bookmarklets, 
+located in Quebec, Canada. This mini-project was to me an introduction to bookmarklets, 
 jquery and node.js (for testing).
 
 One Goal
