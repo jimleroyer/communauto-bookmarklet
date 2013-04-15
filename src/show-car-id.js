@@ -28,8 +28,8 @@ window.bookmarklet({
                                var js = element.href;
                                var match = /CarID=([\d]+)&/g.exec(js);
                                if (match) {
-                                   console.log("Car id is: " + match[1] + ", creating new label.");
                                    var carid = match[1];
+                                   console.log("Car id is: " + carid + ", creating new label.");
                                    element.innerHTML = " &nbsp; Choisir " + carid + " &nbsp; ";
                                }
                                else {
